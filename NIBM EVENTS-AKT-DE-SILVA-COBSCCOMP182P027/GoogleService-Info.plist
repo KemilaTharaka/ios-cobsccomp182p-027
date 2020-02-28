@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>622201104886-970aeuru7r3v7d1fmkj7k4839qae04n2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.622201104886-970aeuru7r3v7d1fmkj7k4839qae04n2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBa0lrMj0CwiHnH9u9miKuqucYaYePbdR0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>622201104886</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nibm.NIBM-EVENTS-AKT-DE-SILVA-COBSCCOMP182P027</string>
+	<key>PROJECT_ID</key>
+	<string>nibm-events-5c430</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nibm-events-5c430.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:622201104886:ios:8709a49ae96da47a36ffd7</string>
+	<key>DATABASE_URL</key>
+	<string>https://nibm-events-5c430.firebaseio.com</string>
+</dict>
+</plist>

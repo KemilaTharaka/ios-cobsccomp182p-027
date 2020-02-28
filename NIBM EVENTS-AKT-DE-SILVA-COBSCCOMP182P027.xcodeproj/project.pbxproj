@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,25 @@
 		0E39501C24080A2000D4BEC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E39501A24080A2000D4BEC9 /* Main.storyboard */; };
 		0E39501E24080A2300D4BEC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E39501D24080A2300D4BEC9 /* Assets.xcassets */; };
 		0E39502124080A2300D4BEC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E39501F24080A2300D4BEC9 /* LaunchScreen.storyboard */; };
+		0E395029240812F200D4BEC9 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E395028240812F200D4BEC9 /* LoginStoryboard.storyboard */; };
+		0ED1F57024082E7300B41329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ED1F56F24082E7300B41329 /* GoogleService-Info.plist */; };
+		0ED1F578240832A600B41329 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F575240832A300B41329 /* HomeVC.swift */; };
+		0ED1F579240832A600B41329 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F576240832A400B41329 /* LoginVC.swift */; };
+		0ED1F57A240832A600B41329 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F577240832A600B41329 /* RegisterVC.swift */; };
+		0ED1F57F2408332E00B41329 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F57C2408332C00B41329 /* Extensions.swift */; };
+		0ED1F5802408332E00B41329 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F57D2408332D00B41329 /* Firebase+Utils.swift */; };
+		0ED1F5812408332E00B41329 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F57E2408332E00B41329 /* Constants.swift */; };
+		0ED1F5852408339F00B41329 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED1F5832408339D00B41329 /* ForgotPasswordVC.xib */; };
+		0ED1F5862408339F00B41329 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F5842408339F00B41329 /* ForgotPasswordVC.swift */; };
+		0ED1F58B2408340100B41329 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F588240833FE00B41329 /* CategoryCell.swift */; };
+		0ED1F58C2408340100B41329 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED1F589240833FF00B41329 /* CategoryCell.xib */; };
+		0ED1F58D2408340100B41329 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F58A2408340100B41329 /* RoundedViews.swift */; };
+		0ED1F58F2408343D00B41329 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F58E2408343D00B41329 /* Category.swift */; };
+		DA0744F96E558D8678F9C55C /* Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5522AC0BF23DAF23E2F6A6 /* Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5522AC0BF23DAF23E2F6A6 /* Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E39501324080A2000D4BEC9 /* NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E39501624080A2000D4BEC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E39501824080A2000D4BEC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +38,22 @@
 		0E39501D24080A2300D4BEC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E39502024080A2300D4BEC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E39502224080A2300D4BEC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E395028240812F200D4BEC9 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		0ED1F56F24082E7300B41329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0ED1F575240832A300B41329 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0ED1F576240832A400B41329 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0ED1F577240832A600B41329 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		0ED1F57C2408332C00B41329 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0ED1F57D2408332D00B41329 /* Firebase+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		0ED1F57E2408332E00B41329 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0ED1F5832408339D00B41329 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		0ED1F5842408339F00B41329 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		0ED1F588240833FE00B41329 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		0ED1F589240833FF00B41329 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		0ED1F58A2408340100B41329 /* RoundedViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		0ED1F58E2408343D00B41329 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		481F90D1E55371CB3F508115 /* Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.release.xcconfig"; path = "Target Support Files/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.release.xcconfig"; sourceTree = "<group>"; };
+		F0258BB75A8537CDF50DF54E /* Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.debug.xcconfig"; path = "Target Support Files/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0744F96E558D8678F9C55C /* Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +73,8 @@
 			children = (
 				0E39501524080A2000D4BEC9 /* NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027 */,
 				0E39501424080A2000D4BEC9 /* Products */,
+				398202C8AB098BB17DFCA509 /* Pods */,
+				DCD6C1EC265F321D5D00F709 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +89,101 @@
 		0E39501524080A2000D4BEC9 /* NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027 */ = {
 			isa = PBXGroup;
 			children = (
-				0E39501624080A2000D4BEC9 /* AppDelegate.swift */,
-				0E39501824080A2000D4BEC9 /* ViewController.swift */,
-				0E39501A24080A2000D4BEC9 /* Main.storyboard */,
+				0ED1F587240833E300B41329 /* CustomView */,
+				0ED1F5822408337800B41329 /* XIBs */,
+				0ED1F57B2408330D00B41329 /* Utils */,
+				0ED1F5742408321400B41329 /* Stroryboards */,
+				0ED1F5732408320000B41329 /* Controller */,
+				0ED1F572240831F700B41329 /* View */,
+				0ED1F571240831ED00B41329 /* Model */,
 				0E39501D24080A2300D4BEC9 /* Assets.xcassets */,
-				0E39501F24080A2300D4BEC9 /* LaunchScreen.storyboard */,
+				0ED1F56F24082E7300B41329 /* GoogleService-Info.plist */,
 				0E39502224080A2300D4BEC9 /* Info.plist */,
 			);
 			path = "NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027";
+			sourceTree = "<group>";
+		};
+		0ED1F571240831ED00B41329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0ED1F58E2408343D00B41329 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0ED1F572240831F700B41329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0ED1F5732408320000B41329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0ED1F575240832A300B41329 /* HomeVC.swift */,
+				0ED1F576240832A400B41329 /* LoginVC.swift */,
+				0ED1F577240832A600B41329 /* RegisterVC.swift */,
+				0E39501624080A2000D4BEC9 /* AppDelegate.swift */,
+				0E39501824080A2000D4BEC9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0ED1F5742408321400B41329 /* Stroryboards */ = {
+			isa = PBXGroup;
+			children = (
+				0E39501A24080A2000D4BEC9 /* Main.storyboard */,
+				0E395028240812F200D4BEC9 /* LoginStoryboard.storyboard */,
+				0E39501F24080A2300D4BEC9 /* LaunchScreen.storyboard */,
+			);
+			path = Stroryboards;
+			sourceTree = "<group>";
+		};
+		0ED1F57B2408330D00B41329 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0ED1F57E2408332E00B41329 /* Constants.swift */,
+				0ED1F57C2408332C00B41329 /* Extensions.swift */,
+				0ED1F57D2408332D00B41329 /* Firebase+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0ED1F5822408337800B41329 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				0ED1F589240833FF00B41329 /* CategoryCell.xib */,
+				0ED1F5832408339D00B41329 /* ForgotPasswordVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		0ED1F587240833E300B41329 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0ED1F588240833FE00B41329 /* CategoryCell.swift */,
+				0ED1F58A2408340100B41329 /* RoundedViews.swift */,
+				0ED1F5842408339F00B41329 /* ForgotPasswordVC.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		398202C8AB098BB17DFCA509 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0258BB75A8537CDF50DF54E /* Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.debug.xcconfig */,
+				481F90D1E55371CB3F508115 /* Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCD6C1EC265F321D5D00F709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C5522AC0BF23DAF23E2F6A6 /* Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E39502524080A2300D4BEC9 /* Build configuration list for PBXNativeTarget "NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027" */;
 			buildPhases = (
+				E9BC417AC948DBCF18797D41 /* [CP] Check Pods Manifest.lock */,
 				0E39500F24080A2000D4BEC9 /* Sources */,
 				0E39501024080A2000D4BEC9 /* Frameworks */,
 				0E39501124080A2000D4BEC9 /* Resources */,
+				F355E2D52EFAB472CB65B9C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +247,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E39502124080A2300D4BEC9 /* LaunchScreen.storyboard in Resources */,
+				0ED1F58C2408340100B41329 /* CategoryCell.xib in Resources */,
 				0E39501E24080A2300D4BEC9 /* Assets.xcassets in Resources */,
+				0ED1F57024082E7300B41329 /* GoogleService-Info.plist in Resources */,
 				0E39501C24080A2000D4BEC9 /* Main.storyboard in Resources */,
+				0ED1F5852408339F00B41329 /* ForgotPasswordVC.xib in Resources */,
+				0E395029240812F200D4BEC9 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9BC417AC948DBCF18797D41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F355E2D52EFAB472CB65B9C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027/Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E39500F24080A2000D4BEC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED1F578240832A600B41329 /* HomeVC.swift in Sources */,
+				0ED1F58D2408340100B41329 /* RoundedViews.swift in Sources */,
+				0ED1F57F2408332E00B41329 /* Extensions.swift in Sources */,
 				0E39501924080A2000D4BEC9 /* ViewController.swift in Sources */,
+				0ED1F579240832A600B41329 /* LoginVC.swift in Sources */,
 				0E39501724080A2000D4BEC9 /* AppDelegate.swift in Sources */,
+				0ED1F5862408339F00B41329 /* ForgotPasswordVC.swift in Sources */,
+				0ED1F5802408332E00B41329 /* Firebase+Utils.swift in Sources */,
+				0ED1F57A240832A600B41329 /* RegisterVC.swift in Sources */,
+				0ED1F5812408332E00B41329 /* Constants.swift in Sources */,
+				0ED1F58B2408340100B41329 /* CategoryCell.swift in Sources */,
+				0ED1F58F2408343D00B41329 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +460,7 @@
 		};
 		0E39502624080A2300D4BEC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0258BB75A8537CDF50DF54E /* Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +479,7 @@
 		};
 		0E39502724080A2300D4BEC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481F90D1E55371CB3F508115 /* Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

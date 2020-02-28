@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="placeholder-1" translatesAutoresizingMaskIntoConstraints="NO" id="ipY-gi-Me4">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="161.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LMc-Dc-NVI">
+                        <rect key="frame" x="8" y="169.5" width="134" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ipY-gi-Me4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9C7-Nm-mNd"/>
+                <constraint firstAttribute="trailing" secondItem="ipY-gi-Me4" secondAttribute="trailing" id="F0l-UU-SpB"/>
+                <constraint firstAttribute="trailing" secondItem="LMc-Dc-NVI" secondAttribute="trailing" constant="8" id="HQX-bT-1XH"/>
+                <constraint firstAttribute="bottom" secondItem="LMc-Dc-NVI" secondAttribute="bottom" constant="8" id="JyM-P8-Vbs"/>
+                <constraint firstItem="LMc-Dc-NVI" firstAttribute="top" secondItem="ipY-gi-Me4" secondAttribute="bottom" constant="8" id="lm1-SY-ffz"/>
+                <constraint firstItem="LMc-Dc-NVI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="qLO-LO-eKA"/>
+                <constraint firstItem="ipY-gi-Me4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xa2-DA-cZp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="categoryImg" destination="ipY-gi-Me4" id="qap-bd-Gl2"/>
+                <outlet property="categoryLbl" destination="LMc-Dc-NVI" id="Xgr-Em-MGp"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder-1" width="600" height="400"/>
+    </resources>
+</document>

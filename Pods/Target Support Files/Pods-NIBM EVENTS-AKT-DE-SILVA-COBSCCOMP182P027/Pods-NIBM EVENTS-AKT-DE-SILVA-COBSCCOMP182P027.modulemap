@@ -1,0 +1,6 @@
+framework module Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027 {
+  umbrella header "Pods-NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027-umbrella.h"
+
+  export *
+  module * { export * }
+}
