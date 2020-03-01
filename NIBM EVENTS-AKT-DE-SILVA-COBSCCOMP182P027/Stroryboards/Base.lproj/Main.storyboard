@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeVC-->
+        <!--Events Collection-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8H1-Zp-eYr">
-                                <rect key="frame" x="20" y="108" width="374" height="788"/>
+                                <rect key="frame" x="10" y="108" width="394" height="788"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zv3-PV-L7z">
                                     <size key="itemSize" width="129" height="147"/>
@@ -39,7 +39,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8H1-Zp-eYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2BP-XG-bH8"/>
+                            <constraint firstItem="8H1-Zp-eYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2BP-XG-bH8"/>
                             <constraint firstItem="yY0-xm-PRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PFv-UX-XZx"/>
                             <constraint firstItem="8H1-Zp-eYr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="RuM-vo-qqG"/>
                             <constraint firstItem="Cyy-pk-nIk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9t-cJ-jsf"/>
@@ -47,26 +47,69 @@
                             <constraint firstAttribute="bottom" secondItem="8H1-Zp-eYr" secondAttribute="bottom" id="hZ3-gt-GWz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yY0-xm-PRa" secondAttribute="trailing" id="l2w-Yr-y1a"/>
                             <constraint firstAttribute="bottom" secondItem="yY0-xm-PRa" secondAttribute="bottom" id="mb4-Of-qxo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8H1-Zp-eYr" secondAttribute="trailing" constant="20" id="vgQ-mx-T6h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8H1-Zp-eYr" secondAttribute="trailing" constant="10" id="vgQ-mx-T6h"/>
                             <constraint firstItem="yY0-xm-PRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zqo-8D-4s6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wJg-Gf-N3Y">
+                    <navigationItem key="navigationItem" title="Events Collection" id="wJg-Gf-N3Y">
                         <barButtonItem key="leftBarButtonItem" title="Login" id="8ID-U1-2Qj">
                             <connections>
                                 <action selector="loginOutClicked:" destination="BYZ-38-t0r" id="eGV-9G-y0T"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="m_bar_button_user" id="JJR-GP-tk8"/>
+                            <barButtonItem image="m_empty_heart" id="HBA-Cs-vO5"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="8H1-Zp-eYr" id="8Xq-gz-kJO"/>
                         <outlet property="loginOutBtn" destination="8ID-U1-2Qj" id="zKv-4I-iSx"/>
+                        <segue destination="kI7-wl-uwW" kind="show" identifier="toEventsVC" id="aAM-m1-nib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="799" y="106"/>
+        </scene>
+        <!--EventsVC-->
+        <scene sceneID="Mf5-zl-6vT">
+            <objects>
+                <viewController id="kI7-wl-uwW" customClass="EventsVC" customModule="NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RCj-mX-ndQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="YKx-wi-eAc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GBR-Hg-JPL">
+                                <rect key="frame" x="2" y="88" width="410" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YKx-wi-eAc" secondAttribute="bottom" id="1Nf-Wg-1i2"/>
+                            <constraint firstItem="GBR-Hg-JPL" firstAttribute="top" secondItem="kjZ-pf-15e" secondAttribute="top" id="5Sz-AX-56b"/>
+                            <constraint firstItem="GBR-Hg-JPL" firstAttribute="leading" secondItem="kjZ-pf-15e" secondAttribute="leading" constant="2" id="BpC-tN-1kW"/>
+                            <constraint firstItem="YKx-wi-eAc" firstAttribute="leading" secondItem="kjZ-pf-15e" secondAttribute="leading" id="CwW-DO-MTh"/>
+                            <constraint firstItem="kjZ-pf-15e" firstAttribute="trailing" secondItem="GBR-Hg-JPL" secondAttribute="trailing" constant="2" id="MDW-pb-7Q0"/>
+                            <constraint firstAttribute="bottom" secondItem="GBR-Hg-JPL" secondAttribute="bottom" id="Trj-uk-OuM"/>
+                            <constraint firstItem="YKx-wi-eAc" firstAttribute="top" secondItem="kjZ-pf-15e" secondAttribute="top" id="fzq-QP-B7u"/>
+                            <constraint firstItem="YKx-wi-eAc" firstAttribute="trailing" secondItem="kjZ-pf-15e" secondAttribute="trailing" id="ylw-RA-if3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kjZ-pf-15e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eLJ-0j-dTT"/>
+                    <connections>
+                        <outlet property="tableView" destination="GBR-Hg-JPL" id="kcT-TJ-ZiH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9y-Tp-oBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="106"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6qn-Of-UIM">
@@ -76,10 +119,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oDj-r9-YC4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JhK-eI-N8M"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0aU-qc-2fi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyl-OJ-n8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,5 +134,7 @@
     </scenes>
     <resources>
         <image name="bg_cat3" width="1500" height="1875"/>
+        <image name="m_bar_button_user" width="28" height="30"/>
+        <image name="m_empty_heart" width="28" height="30"/>
     </resources>
 </document>

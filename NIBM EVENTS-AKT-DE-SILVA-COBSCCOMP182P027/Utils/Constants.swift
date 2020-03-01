@@ -31,4 +31,9 @@ struct AppColors {
 
 struct Identifiers {
     static let CategoryCell = "CategoryCell"
+    static let EventCell = "EventCell"
+}
+
+struct Segues {
+    static let ToEvents = "toEventsVC"
 }
