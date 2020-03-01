@@ -9,8 +9,8 @@
 import UIKit
 import FirebaseFirestore
 
-class EventsVC: UIViewController {
-    
+class EventsVC: UIViewController, EventCellDelegate {
+
     //Outlets
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,8 +21,10 @@ class EventsVC: UIViewController {
     var category: Category!
     var listner: ListenerRegistration!
     var db: Firestore!
+    var showLikes = false
     
     var selectedEvent: Event?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +77,14 @@ class EventsVC: UIViewController {
     
     func setupQuery() {
         
+        var ref: Query!
+        if showLikes {
+            ref = db.collection("users").document(UserService.user.id).collection("likes")
+            
+        }else{
+            ref = db.events(category: category.id)
+        }
+        
         listner = db.events(category: category.id).addSnapshotListener({ (snap, error) in
             if let error = error {
                 debugPrint(error.localizedDescription)
@@ -97,6 +107,11 @@ class EventsVC: UIViewController {
             })
         })
         
+    }
+    func eventLiked(event: Event) {
+        UserService.likeSelected(event: event)
+        guard let index = events.firstIndex(of: event) else { return }
+        tableView .reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
 
@@ -148,7 +163,7 @@ extension EventsVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.EventCell, for: indexPath) as? EventCell {
             
-            cell.configureCell(event: events[indexPath.row])
+            cell.configureCell(event: events[indexPath.row], delegate: self)
             return cell
             
         }

@@ -73,13 +73,18 @@
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="m_bar_button_user" id="JJR-GP-tk8"/>
-                            <barButtonItem image="m_empty_heart" id="HBA-Cs-vO5"/>
+                            <barButtonItem image="m_empty_heart" id="HBA-Cs-vO5">
+                                <connections>
+                                    <action selector="likesClicked:" destination="BYZ-38-t0r" id="kzt-Q6-DYj"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="8H1-Zp-eYr" id="8Xq-gz-kJO"/>
                         <outlet property="loginOutBtn" destination="8ID-U1-2Qj" id="zKv-4I-iSx"/>
                         <segue destination="kI7-wl-uwW" kind="show" identifier="toEventsVC" id="aAM-m1-nib"/>
+                        <segue destination="kI7-wl-uwW" kind="show" identifier="ToLikes" id="T6E-8y-Y0i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -367,6 +372,7 @@
         <image name="m_empty_heart" width="28" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wov-xY-aVH"/>
+        <segue reference="T6E-8y-Y0i"/>
+        <segue reference="S4t-dy-Ggd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -21,6 +21,9 @@ struct StoryboardId {
 struct AppImages {
     static let GreenCheck = "green_check"
     static let RedCheck = "red_check"
+    static let FilledLike = "m_filled_heart"
+    static let EmptyLike = "m_empty_heart"
+    
 }
 
 struct AppColors {
@@ -39,4 +42,5 @@ struct Segues {
     static let ToAddEditCategory = "ToAddEditCategory"
     static let ToEditCategory = "ToEditCategory"
     static let ToAddEditEvent = "ToAddEditEvent"
+    static let ToLikes = "ToLikes"
 }

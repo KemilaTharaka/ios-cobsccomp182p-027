@@ -9,6 +9,11 @@
 import UIKit
 import Kingfisher
 
+protocol EventCellDelegate : class {
+    func eventLiked(event: Event)
+    
+}
+
 class EventCell: UITableViewCell {
 
     @IBOutlet weak var eventImg: RoundedImageView!
@@ -18,13 +23,19 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var likeBtn: UIButton!
     
+    weak var delegate : EventCellDelegate?
+    private var event : Event!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func configureCell(event: Event){
+    func configureCell(event: Event, delegate: EventCellDelegate){
+        
+        self.event = event
+        self.delegate = delegate
         
         eventTitle.text = event.name
         location.text = event.location
@@ -40,10 +51,20 @@ class EventCell: UITableViewCell {
             
         }
         
+        if UserService.likes.contains(event) {
+            
+            likeBtn.setImage(UIImage(named: AppImages.FilledLike), for: .normal)
+            
+        }else {
+            likeBtn.setImage(UIImage(named: AppImages.EmptyLike), for: .normal)
+        }
+        
         
     }
 
     @IBAction func likeClicked(_ sender: Any) {
+        
+         delegate?.eventLiked(event: event)
         
         
         

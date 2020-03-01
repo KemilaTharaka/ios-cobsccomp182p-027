@@ -78,3 +78,11 @@ struct Event {
     
     
 }
+
+extension Event : Equatable {
+    
+    static func == (lhs: Event, rhs: Event) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+}

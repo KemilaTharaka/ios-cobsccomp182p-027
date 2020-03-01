@@ -74,6 +74,10 @@ class HomeVC: UIViewController {
         if let user  = Auth.auth().currentUser, !user.isAnonymous{
             //We are logged in
             loginOutBtn.title = "Logout"
+            if UserService.userListner == nil {
+                UserService.getCurrentUser()
+                
+            }
         } else {
             loginOutBtn.title = "Login"
         }
@@ -117,6 +121,11 @@ class HomeVC: UIViewController {
         present(controller, animated: true, completion: nil)
     }
 
+    @IBAction func likesClicked(_ sender: Any) {
+        
+        performSegue(withIdentifier: Segues.ToLikes , sender: self)
+        
+    }
     @IBAction func addCategoryBtn(_ sender: Any) {
         
     }
@@ -129,6 +138,7 @@ class HomeVC: UIViewController {
         }else {
             do {
                 try Auth.auth().signOut()
+                UserService.logOutUser()
                 Auth.auth().signInAnonymously { (result, error) in
                     if let error = error{
                         Auth.auth().handleFireAuthError(error: error, vc: self)
@@ -216,6 +226,12 @@ extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             if let destination = segue.destination as? EventsVC {
                 
                 destination.category = selectedCategory
+                
+            }
+        }else if segue.identifier == Segues.ToLikes {
+            if let destination = segue.destination as? EventsVC {
+                destination.category = selectedCategory
+                destination.showLikes = true
                 
             }
         }
