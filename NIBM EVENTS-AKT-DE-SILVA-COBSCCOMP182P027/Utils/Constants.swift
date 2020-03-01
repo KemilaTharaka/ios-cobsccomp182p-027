@@ -36,4 +36,7 @@ struct Identifiers {
 
 struct Segues {
     static let ToEvents = "toEventsVC"
+    static let ToAddEditCategory = "ToAddEditCategory"
+    static let ToEditCategory = "ToEditCategory"
+    static let ToAddEditEvent = "ToAddEditEvent"
 }

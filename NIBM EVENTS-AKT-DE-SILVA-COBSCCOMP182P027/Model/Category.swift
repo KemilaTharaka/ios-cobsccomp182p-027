@@ -16,6 +16,21 @@ struct Category {
     var isActive: Bool = true
     var timeStamp: Timestamp
     
+    init(
+        name: String,
+        id: String,
+        imgUrl: String,
+        isActive: Bool = true,
+        timeStamp: Timestamp
+        ) {
+        
+        self.name = name
+        self.id = id
+        self.imgUrl = imgUrl
+        self.isActive = isActive
+        self.timeStamp = timeStamp
+    }
+    
     
     init(data: [String: Any]) {
         
@@ -26,6 +41,21 @@ struct Category {
         self.timeStamp = data["timeStamp"] as? Timestamp ?? Timestamp()
         
     }
+    
+    static func modelToData(category: Category) -> [String: Any] {
+        
+        let data : [String: Any] = [
+            "name": category.name,
+            "id": category.id,
+            "imgUrl": category.imgUrl,
+            "isActive": category.isActive,
+            "timeStamp": category.timeStamp
+        ]
+        
+        return data
+        
+    }
+    
 }
 
 

@@ -69,9 +69,7 @@ class HomeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         setCategoriesListner()
-//        
-//        //        fetchDocument()
-//        fetchCollection()
+
         
         if let user  = Auth.auth().currentUser, !user.isAnonymous{
             //We are logged in
@@ -119,6 +117,9 @@ class HomeVC: UIViewController {
         present(controller, animated: true, completion: nil)
     }
 
+    @IBAction func addCategoryBtn(_ sender: Any) {
+        
+    }
     
     @IBAction func loginOutClicked(_ sender: Any) {
         

@@ -33,7 +33,10 @@ class EventCell: UITableViewCell {
         
         if let url = URL(string: event.imageUrl) {
             
-            eventImg.kf.setImage(with: url)
+            let placeholder = UIImage(named: "placeholder-1")
+            let options : KingfisherOptionsInfo = [KingfisherOptionsInfoItem.transition(.fade(0.2))]
+            eventImg.kf.indicatorType = .activity
+            eventImg.kf.setImage(with: url, placeholder: placeholder, options: options)
             
         }
         

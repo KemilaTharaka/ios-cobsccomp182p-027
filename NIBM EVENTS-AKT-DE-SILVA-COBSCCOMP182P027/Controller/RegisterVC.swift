@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class RegisterVC: UIViewController  {
     
@@ -75,7 +76,9 @@ class RegisterVC: UIViewController  {
         
                 guard let email = emailTxt.text , email.isNotEmpty ,
                     let username = usernameTxt.text , username.isNotEmpty ,
-                    let password = passwordTxt.text , password.isNotEmpty else { return }
+                    let password = passwordTxt.text , password.isNotEmpty else {
+                        simpleAlert(title: "Error", msg: "Please fill relevant fields!")
+                        return }
         
                 activityIndicator.startAnimating()
         
@@ -87,6 +90,11 @@ class RegisterVC: UIViewController  {
                         self.activityIndicator.startAnimating()
                         return
                     }
+                    
+                    guard let firUser = authResult?.user else { return }
+                    let eventUser = User.init(id: firUser.uid, email: email, username: username)
+                    //Upload to Firestore
+                    self.createFirestoreUser(user: eventUser)
         
                     self.activityIndicator.stopAnimating()
         
@@ -95,5 +103,25 @@ class RegisterVC: UIViewController  {
         
         
         }
+    
+    func createFirestoreUser(user: User) {
+        //Step 1: Create document reference
+        let newUserRef = Firestore.firestore().collection("users").document(user.id)
+        
+        //Step 2: Create model data
+        let data = User.modelToData(user: user)
+        //Step 3: Upload to Firestore
+        newUserRef.setData(data) { (error) in
+            if let error = error {
+                Auth.auth().handleFireAuthError(error: error, vc: self)
+                debugPrint("Error signing in:  \(error.localizedDescription)")
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
+            self.activityIndicator.stopAnimating()
+        }
+        
+        
+    }
     
 }

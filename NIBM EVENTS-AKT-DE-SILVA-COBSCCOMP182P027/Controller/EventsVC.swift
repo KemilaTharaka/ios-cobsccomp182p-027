@@ -21,9 +21,17 @@ class EventsVC: UIViewController {
     var category: Category!
     var listner: ListenerRegistration!
     var db: Firestore!
+    
+    var selectedEvent: Event?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let editCategoryBtn = UIBarButtonItem(title: "Edit Category", style: .plain, target: self, action: #selector(editCategory))
+        let newEventBtn = UIBarButtonItem(title: "+ Event", style: .plain, target: self, action: #selector(newEvent))
+        
+        navigationItem.setRightBarButtonItems([editCategoryBtn, newEventBtn], animated: false)
+        
         db = Firestore.firestore()
         
         
@@ -34,6 +42,35 @@ class EventsVC: UIViewController {
         setupQuery()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func editCategory() {
+        performSegue(withIdentifier: Segues.ToEditCategory, sender: self)
+    }
+    
+    @objc func newEvent() {
+        performSegue(withIdentifier: Segues.ToAddEditEvent, sender: self)
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        //Editing event
+        selectedEvent = events[indexPath.row]
+        performSegue(withIdentifier: Segues.ToAddEditEvent, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.ToAddEditEvent {
+            if let destination = segue.destination as? AddEditEventsVC {
+                destination.selectedCategory = category
+                destination.eventToEdit = selectedEvent
+            }
+        } else if segue.identifier == Segues.ToEditCategory {
+            
+            if let destination = segue.destination as? AddEditCategoryVC {
+                destination.categoryToEdit = category
+            }
+            
+        }
     }
     
     func setupQuery() {
