@@ -9,6 +9,8 @@
 import Foundation
 import FirebaseFirestore
 
+//Event Collection
+
 struct Category {
     var name:String
     var id: String
