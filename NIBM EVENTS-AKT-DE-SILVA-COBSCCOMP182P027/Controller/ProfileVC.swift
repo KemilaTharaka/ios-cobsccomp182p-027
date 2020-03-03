@@ -37,7 +37,7 @@ class ProfileVC: UIViewController {
                     DispatchQueue.main.async {
                         if success {
                             // User authenticated successfully, take appropriate action
-                            self.simpleAlert(title: "Success", msg: "User Authentication Success")
+                            return
                         } else {
                             // User did not authenticate successfully, look at error and take appropriate action
                             self.simpleAlert(title: "Error", msg: "User did not authenticate successfully")
