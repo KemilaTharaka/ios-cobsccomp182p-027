@@ -11,6 +11,11 @@ import LocalAuthentication
 import BiometricAuthentication
 
 class ProfileVC: UIViewController {
+    
+    //Outlets
+    @IBOutlet weak var usernameTxt: UILabel!
+    @IBOutlet weak var emailTxt: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

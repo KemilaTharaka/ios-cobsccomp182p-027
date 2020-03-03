@@ -23,15 +23,6 @@ class RegisterVC: UIViewController  {
     
     @IBOutlet weak var passCheckImg: UIImageView!
     @IBOutlet weak var confirmPassCheckImg: UIImageView!
-    //    @IBOutlet weak var usernameTxt: UITextField!
-//    @IBOutlet weak var emailTxt: UITextField!
-//    @IBOutlet weak var passwordTxt: UITextField!
-//    @IBOutlet weak var confirmPassTxt: UITextField!
-//    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-//
-//    @IBOutlet weak var passCheckImg: UIImageView!
-//    @IBOutlet weak var confirmPassCheckImg: UIImageView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +31,6 @@ class RegisterVC: UIViewController  {
         confirmPassTxt.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         
 
-        // Do any additional setup after loading the view.
     }
     
     @objc func textFieldDidChange(_ textField: UITextField){
@@ -70,7 +60,6 @@ class RegisterVC: UIViewController  {
         }
     }
     
-//    @IBAction func registerClicked(_ sender: Any) {
     
     @IBAction func registerClicked(_ sender: Any) {
         
