@@ -24,6 +24,7 @@
 		0EB7B44D240BCA7200404396 /* AddEditEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7B44C240BCA7200404396 /* AddEditEventsVC.swift */; };
 		0EB7B44F240C0FEE00404396 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7B44E240C0FED00404396 /* User.swift */; };
 		0EB7B452240C215300404396 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7B451240C215200404396 /* UserService.swift */; };
+		0EB7B455240E03DB00404396 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB7B453240D43A400404396 /* LocalAuthentication.framework */; };
 		0ED1F57024082E7300B41329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ED1F56F24082E7300B41329 /* GoogleService-Info.plist */; };
 		0ED1F578240832A600B41329 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F575240832A300B41329 /* HomeVC.swift */; };
 		0ED1F579240832A600B41329 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1F576240832A400B41329 /* LoginVC.swift */; };
@@ -61,6 +62,7 @@
 		0EB7B44C240BCA7200404396 /* AddEditEventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEventsVC.swift; sourceTree = "<group>"; };
 		0EB7B44E240C0FED00404396 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0EB7B451240C215200404396 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		0EB7B453240D43A400404396 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		0ED1F56F24082E7300B41329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0ED1F575240832A300B41329 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0ED1F576240832A400B41329 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB7B455240E03DB00404396 /* LocalAuthentication.framework in Frameworks */,
 				DA0744F96E558D8678F9C55C /* Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +225,7 @@
 		DCD6C1EC265F321D5D00F709 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EB7B453240D43A400404396 /* LocalAuthentication.framework */,
 				0C5522AC0BF23DAF23E2F6A6 /* Pods_NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027.framework */,
 			);
 			name = Frameworks;

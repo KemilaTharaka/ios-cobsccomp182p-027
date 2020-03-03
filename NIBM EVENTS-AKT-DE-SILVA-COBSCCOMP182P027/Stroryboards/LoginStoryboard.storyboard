@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sKb-kv-XiB">
-                                <rect key="frame" x="20" y="108" width="374" height="408"/>
+                                <rect key="frame" x="20" y="108" width="374" height="356"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM EVENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whf-zF-XJN">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -91,20 +91,6 @@
                                         </state>
                                         <connections>
                                             <segue destination="CQd-Iu-g9z" kind="show" id="Ws8-if-uzy"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQz-zX-IcK" customClass="RoundedButton" customModule="NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="368" width="374" height="40"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="NBM-Hu-I1n"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <state key="normal" title="Continue as guest">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="guestClicked:" destination="MPg-9d-5Ob" eventType="touchUpInside" id="YqG-tU-Qq8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -211,12 +197,6 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="A5t-aw-JmK">
                                 <rect key="frame" x="189" y="527" width="37" height="37"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3w-ku-ASo">
-                                <rect key="frame" x="20" y="108" width="374" height="47.5"/>
-                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="41"/>
-                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="4GZ-2f-f4O">
                                 <rect key="frame" x="358" y="410" width="30" height="30"/>
                                 <constraints>
@@ -234,23 +214,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="g3w-ku-ASo" firstAttribute="centerX" secondItem="BSE-Th-ulA" secondAttribute="centerX" id="3Z8-vB-S3x"/>
                             <constraint firstItem="QWu-tw-Rl2" firstAttribute="leading" secondItem="BSE-Th-ulA" secondAttribute="leading" id="6ot-39-PQb"/>
                             <constraint firstAttribute="bottom" secondItem="QWu-tw-Rl2" secondAttribute="bottom" id="76D-pG-Sb3"/>
                             <constraint firstAttribute="trailing" secondItem="QWu-tw-Rl2" secondAttribute="trailing" id="7iI-BV-VRn"/>
-                            <constraint firstItem="g3w-ku-ASo" firstAttribute="top" secondItem="iIc-5j-jgp" secondAttribute="top" constant="20" id="8NV-d6-wkj"/>
                             <constraint firstItem="4GZ-2f-f4O" firstAttribute="centerY" secondItem="10T-K2-7G8" secondAttribute="centerY" id="D1V-vp-0C2"/>
                             <constraint firstItem="4GZ-2f-f4O" firstAttribute="trailing" secondItem="10T-K2-7G8" secondAttribute="trailing" constant="-6" id="Djn-WR-Jdb"/>
                             <constraint firstItem="DIq-VZ-jdM" firstAttribute="leading" secondItem="BSE-Th-ulA" secondAttribute="leadingMargin" id="H4w-IZ-huF"/>
                             <constraint firstItem="DIq-VZ-jdM" firstAttribute="centerX" secondItem="A5t-aw-JmK" secondAttribute="centerX" id="LtJ-Ry-bG9"/>
-                            <constraint firstItem="iIc-5j-jgp" firstAttribute="trailing" secondItem="g3w-ku-ASo" secondAttribute="trailing" constant="20" id="Qnf-cH-V7h"/>
                             <constraint firstItem="iIc-5j-jgp" firstAttribute="bottom" secondItem="A5t-aw-JmK" secondAttribute="bottom" constant="298" id="TX4-i0-5Ek"/>
                             <constraint firstItem="wdi-IW-3el" firstAttribute="trailing" secondItem="DB5-iR-Kj5" secondAttribute="trailing" constant="-6" id="Tca-u1-aUk"/>
                             <constraint firstItem="wdi-IW-3el" firstAttribute="centerY" secondItem="DB5-iR-Kj5" secondAttribute="centerY" id="Y4d-nf-skz"/>
                             <constraint firstItem="iIc-5j-jgp" firstAttribute="bottom" secondItem="DIq-VZ-jdM" secondAttribute="bottom" constant="297" id="bvg-jW-h2F"/>
                             <constraint firstItem="QWu-tw-Rl2" firstAttribute="centerX" secondItem="A5t-aw-JmK" secondAttribute="centerX" id="jMf-yi-CjG"/>
                             <constraint firstItem="QWu-tw-Rl2" firstAttribute="top" secondItem="iIc-5j-jgp" secondAttribute="top" id="ob9-Q9-jI8"/>
-                            <constraint firstItem="g3w-ku-ASo" firstAttribute="leading" secondItem="iIc-5j-jgp" secondAttribute="leading" constant="20" id="y5i-TB-Gv2"/>
                             <constraint firstItem="A5t-aw-JmK" firstAttribute="leading" secondItem="iIc-5j-jgp" secondAttribute="leading" constant="189" id="ynX-1o-eno"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iIc-5j-jgp"/>

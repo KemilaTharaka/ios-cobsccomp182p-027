@@ -89,7 +89,6 @@ class EventsVC: UIViewController, EventCellDelegate {
             if let error = error {
                 debugPrint(error.localizedDescription)
             }
-            
             snap?.documentChanges.forEach({ (change) in
                 let data = change.document.data()
                 let event = Event.init(data: data)

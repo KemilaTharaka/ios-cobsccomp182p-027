@@ -11,7 +11,6 @@ import Kingfisher
 
 protocol EventCellDelegate : class {
     func eventLiked(event: Event)
-    
 }
 
 class EventCell: UITableViewCell {
@@ -65,8 +64,6 @@ class EventCell: UITableViewCell {
     @IBAction func likeClicked(_ sender: Any) {
         
          delegate?.eventLiked(event: event)
-        
-        
         
     }
     

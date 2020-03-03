@@ -143,8 +143,8 @@ class AddEditCategoryVC: UIViewController {
         
     }
     
-    func handleError(error: Error, msg: String) {
-        debugPrint(error.localizedDescription)
+    func handleError(error: Error?, msg: String) {
+        debugPrint(error!.localizedDescription)
         self.simpleAlert(title: "Error", msg: msg)
         self.activityIndicator.stopAnimating()
     }
@@ -169,4 +169,6 @@ extension AddEditCategoryVC: UIImagePickerControllerDelegate, UINavigationContro
         dismiss(animated: true, completion: nil)
     }
     
+    
+
 }

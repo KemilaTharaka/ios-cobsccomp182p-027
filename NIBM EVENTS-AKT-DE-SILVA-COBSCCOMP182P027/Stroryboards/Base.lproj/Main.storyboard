@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="yY0-xm-PRa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event-bg" translatesAutoresizingMaskIntoConstraints="NO" id="yY0-xm-PRa">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8H1-Zp-eYr">
@@ -72,7 +72,11 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem image="m_bar_button_user" id="JJR-GP-tk8"/>
+                            <barButtonItem image="m_bar_button_user" id="JJR-GP-tk8">
+                                <connections>
+                                    <segue destination="BTa-ER-XQM" kind="show" id="cou-tJ-WKm"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="m_empty_heart" id="HBA-Cs-vO5">
                                 <connections>
                                     <action selector="likesClicked:" destination="BYZ-38-t0r" id="kzt-Q6-DYj"/>
@@ -343,6 +347,30 @@
             </objects>
             <point key="canvasLocation" x="1623" y="106"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="OXb-8N-LWe">
+            <objects>
+                <viewController id="BTa-ER-XQM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xUK-Wa-Ptc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tll-4R-WDw">
+                                <rect key="frame" x="186" y="143" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PXR-n6-bl7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESb-YY-aSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="-607"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6qn-Of-UIM">
             <objects>
@@ -368,6 +396,7 @@
         <image name="add_blue" width="512" height="512"/>
         <image name="bg_cat3" width="1500" height="1875"/>
         <image name="camera" width="66" height="54"/>
+        <image name="event-bg" width="3307" height="4961"/>
         <image name="m_bar_button_user" width="28" height="30"/>
         <image name="m_empty_heart" width="28" height="30"/>
     </resources>
