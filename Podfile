@@ -14,6 +14,7 @@ target 'NIBM EVENTS-AKT-DE-SILVA-COBSCCOMP182P027' do
   pod 'IQKeyboardManagerSwift', '6.3.0'
   pod 'Kingfisher', '~> 4.0'
   pod 'CodableFirebase'
+  pod 'BiometricAuthentication'
   pod 'Alamofire'
 
 end

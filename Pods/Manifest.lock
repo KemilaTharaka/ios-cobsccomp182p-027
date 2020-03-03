@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - BiometricAuthentication (3.1.2)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
@@ -97,6 +98,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - BiometricAuthentication
   - CodableFirebase
   - Firebase/Auth (= 6.1.0)
   - Firebase/Firestore (= 6.1.0)
@@ -108,6 +110,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - BiometricAuthentication
     - BoringSSL-GRPC
     - CodableFirebase
     - Firebase
@@ -129,6 +132,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  BiometricAuthentication: 36445f3ab77699489f91995bed887be89890afac
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
   Firebase: 8d77bb33624ae9b62d745d82ec023de5f70f7e4f
@@ -148,6 +152,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
 
-PODFILE CHECKSUM: 8bdacf493e4cdf515d215fffe8be5d2a2dcafdc1
+PODFILE CHECKSUM: 6581140785efc3f94a483e8de5a59d67efd96079
 
 COCOAPODS: 1.8.4

@@ -347,10 +347,10 @@
             </objects>
             <point key="canvasLocation" x="1623" y="106"/>
         </scene>
-        <!--View Controller-->
+        <!--ProfileVC-->
         <scene sceneID="OXb-8N-LWe">
             <objects>
-                <viewController id="BTa-ER-XQM" sceneMemberID="viewController">
+                <viewController id="BTa-ER-XQM" customClass="ProfileVC" customModule="NIBM_EVENTS_AKT_DE_SILVA_COBSCCOMP182P027" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xUK-Wa-Ptc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
