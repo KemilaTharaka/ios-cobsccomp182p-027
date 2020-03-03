@@ -1,6 +1,6 @@
 # NIBM Events
 
-By using swift developed an ios application to handle the Educational Institute called NIBM - National Institute of Business Management in Sri Lanka.
+By using swift developed an ios application to handle Events for the Educational Institute called NIBM - National Institute of Business Management in Sri Lanka.
 
 ## Notes:
 
@@ -15,5 +15,5 @@ By using swift developed an ios application to handle the Educational Institute 
 
 ## Profiling
 
-- Done the Profiling part of this application below attached the sharable Google Drive folder for the   Memory Profiling file
+- Done the Profiling part of this application below attached the sharable Google Drive folder for the Memory Profiling file
     - https://drive.google.com/open?id=1oev0BHbhiE58_g6yNh0QFhsSKv-qXenv
